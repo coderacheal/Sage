@@ -1,5 +1,4 @@
 .NavBar {
-  margin-bottom: 20px;
   justify-content: space-between;
 }
 
@@ -9,12 +8,4 @@
   padding: 20px
 }
 
-.select {
-  width: 100%;
-  height: 45px;
-  padding: 10px;
-  background-color: rgb(255, 0, 102);
-  color: white;
-  outline: none;
-  font-weight: bold;
-}
+

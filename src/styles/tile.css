@@ -8,8 +8,7 @@
 }
 
 .individualCryptoTile {
-  padding: 15% 25%;
-  /* border: 2px solid green; */
+  padding: 50px 50px;
   cursor: pointer;
   transition: 1s;
   font-weight: bold;
@@ -18,5 +17,4 @@
 
 .individualCryptoTile:hover {
   background-color: rgb(255, 0, 102);
-  /* border: 1px solid red; */
 }

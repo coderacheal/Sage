@@ -1,9 +1,8 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Tile = () => {
-  const currencies = [
-    { name: 'BITCOIN' }, { name: 'Ethereum ' }, { name: 'Tether' }, { name: 'BNB' }, { name: 'USD Coin' }, { name: 'XRP ' }, { name: 'Cardano' }, { name: 'Polygon' }, { name: 'DogeCoin' }, { name: 'Binance' }, { name: 'Solana' }, { name: 'Polkadot' }, { name: 'StorX' }, { name: 'MELX' },
-  ];
+  const { currencies } = useSelector((store) => store.crypto);
 
   return (
     <div>
