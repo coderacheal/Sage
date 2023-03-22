@@ -1,3 +1,22 @@
 .allCryto {
-    display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: auto;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.individualCryptoTile {
+  padding: 15% 25%;
+  /* border: 2px solid green; */
+  cursor: pointer;
+  transition: 1s;
+  font-weight: bold;
+  border: 1px solid rgb(255, 0, 102);;
+}
+
+.individualCryptoTile:hover {
+  background-color: rgb(255, 0, 102);
+  /* border: 1px solid red; */
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tile = () => {
   const currencies = [
-    { name: 'BITCOIN' }, { name: 'Ethereum ' }, { name: 'Tether' }, { name: 'BNB' }, { name: 'USD Coin' }, { name: 'XRP (FORMERLY RIPPLE)' }, { name: 'Cardano' }, { name: 'Polygon' }, { name: 'DogeCoin' }, { name: 'Binance USD' },
+    { name: 'BITCOIN' }, { name: 'Ethereum ' }, { name: 'Tether' }, { name: 'BNB' }, { name: 'USD Coin' }, { name: 'XRP ' }, { name: 'Cardano' }, { name: 'Polygon' }, { name: 'DogeCoin' }, { name: 'Binance' }, { name: 'Solana' }, { name: 'Polkadot' }, { name: 'StorX' }, { name: 'MELX' },
   ];
 
   return (
