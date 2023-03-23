@@ -1,0 +1,10 @@
+.dailyData {
+  display: flex;
+  background-color: rgb(255, 0, 102);
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.dailyData:nth-child(odd) {
+  background-color: rgb(119, 0, 20);
+}

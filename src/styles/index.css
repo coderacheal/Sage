@@ -1,5 +1,11 @@
+@import 'tile.css';
+@import 'navbar.css';
+@import 'cryptoDetails.css';
+@import 'options.css';
+
 body {
   margin: 0;
+  background-color: black;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -14,6 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 code {
