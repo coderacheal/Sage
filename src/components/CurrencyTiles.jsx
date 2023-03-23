@@ -1,10 +1,10 @@
 import React from 'react';
 import Tile from './Tile';
-import Options from './Options';
+// import Options from './Options';
 
 const CurrencyTiles = () => (
   <div>
-    <Options />
+    {/* <Options /> */}
     <Tile />
   </div>
 );

@@ -1,19 +1,26 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+// import React from 'react';
+// import { useEffect } from 'react';
+// import { useSelector, useDispatch } from 'react-redux';
+// import { getCryptoData } from '../redux/currencySlice';
 
-const Options = () => {
-  const { currencies } = useSelector((store) => store.crypto);
+// const Options = () => {
+//   const dispatch = useDispatch();
+//   const { currencies } = useSelector((store) => store.crypto);
 
-  return (
-    <div className="SelectDiv">
-      <select className="select">
-        <option value="" disabled selected hidden>Select a Crypto Currency</option>
-        {currencies.map((each) => (
-          <option key={each.name}>{each.name}</option>
-        ))}
-      </select>
-    </div>
-  );
-};
+//   // useEffect(() => {
+//   //   dispatch(getCryptoData());
+//   // });
 
-export default Options;
+//   return (
+//     <div className="SelectDiv">
+//       <select className="select">
+//         <option value="" disabled selected hidden>Select a Crypto Currency</option>
+//         {currencies.map((each) => (
+//           <option key={each.id}>{each.name}</option>
+//         ))}
+//       </select>
+//     </div>
+//   );
+// };
+
+// export default Options;
