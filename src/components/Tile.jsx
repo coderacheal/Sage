@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import PropTypes from 'prop-types';
 import { getCryptoData } from '../redux/currencySlice';
 
 const Tile = () => {
@@ -9,26 +8,25 @@ const Tile = () => {
 
   useEffect(() => {
     dispatch(getCryptoData());
-  }, [dispatch, crypto]);
+  }, [dispatch]);
 
   return (
     <div>
+      <div className="NavBar">
+        <h1 className="brand">
+          SMART CRYPTO
+        </h1>
+      </div>
       <div className="allCryto">
         {crypto.map((each) => (
-          <div key={each.id} className="individualCryptoTile">{each.name}</div>
+          <div key={each.id} className="individualCryptoTile">
+            {each.name}
+            <i className="fa-solid fa-arrow-right" />
+          </div>
         ))}
       </div>
     </div>
   );
 };
-
-// Tile.propTypes = {
-//   book: PropTypes.shape({
-//     id: PropTypes.string,
-//     title: PropTypes.string,
-//     author: PropTypes.string,
-//     category: PropTypes.string,
-//   }).isRequired,
-// };
 
 export default Tile;
