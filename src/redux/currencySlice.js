@@ -8,10 +8,9 @@ const initialState = {
 
 const BASEURL = 'https://api.coingecko.com/api/v3/coins/';
 
-export const getCryptoData = () => createAsyncThunk('data/getCryptoData', async () => {
+export const getCryptoData = createAsyncThunk('data/getCryptoData', async () => {
   const response = await axios.get(BASEURL);
   const crytoData = response.data;
-  console.log(crytoData);
   return crytoData.map((each) => (
     {
       id: each.id,
@@ -25,13 +24,13 @@ const currencySlice = createSlice({
   name: 'crypto',
   initialState,
   reducers: {},
-  // extraReducers(builder) {
-  //   builder
-  //     .addCase(getCryptoData.fulfilled, (state, action) => ({
-  //       ...state,
-  //       crypto: action.payload,
-  //     }));
-  // },
+  extraReducers: (builder) => {
+    builder
+      .addCase(getCryptoData.fulfilled, (state, action) => ({
+        ...state,
+        crypto: action.payload,
+      }));
+  },
 });
 
 export default currencySlice.reducer;

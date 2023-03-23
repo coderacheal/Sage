@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import { useEffect } from 'react';
-// import { getCryptoData } from '../redux/currencySlice';
-// import store from '../redux/store';
+// import PropTypes from 'prop-types';
+import { getCryptoData } from '../redux/currencySlice';
 
 const Tile = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const { crypto } = useSelector((store) => store.crypto);
-  // const { status } = useSelector((store) => store.crypto);
 
-  // useEffect(() => {
-  //   dispatch(getCryptoData());
-  // }, [dispatch, crypto]);
+  useEffect(() => {
+    dispatch(getCryptoData());
+  }, [dispatch, crypto]);
 
   return (
     <div>
