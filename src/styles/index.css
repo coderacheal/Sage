@@ -1,7 +1,5 @@
 @import 'tile.css';
-@import 'navbar.css';
 @import 'cryptoDetails.css';
-@import 'options.css';
 
 body {
   margin: 0;
