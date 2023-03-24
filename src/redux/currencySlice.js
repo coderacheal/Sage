@@ -34,7 +34,9 @@ const currencySlice = createSlice({
       .addCase(getCryptoData.fulfilled, (state, action) => ({
         ...state,
         crypto: action.payload,
-      }));
+      }
+      // .addCase()
+      ));
   },
 });
 
