@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getCryptoData } from '../redux/currencySlice';
-import Navbar from './NavBar';
 
 const Tiles = () => {
   const dispatch = useDispatch();
@@ -23,13 +22,13 @@ const Tiles = () => {
 
   return (
     <div>
-      <Navbar />
-      <input type="text" value={search} onChange={handleSearch} />
+      <h1>SMART CRYPTO</h1>
+      <input type="text" className="search" value={search} onChange={handleSearch} />
       <div className="allCryto">
         {filtering.map((eachCoin) => (
           <div key={eachCoin.id} className="individualCryptoTile">
             <img src={eachCoin.image.small} alt={eachCoin.name} />
-            {eachCoin.name}
+            <p>{eachCoin.name}</p>
             <Link to={`/crypto/${eachCoin.id}`}>
               <i className="fa-solid fa-arrow-right" />
             </Link>

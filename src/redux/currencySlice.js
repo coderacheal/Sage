@@ -20,6 +20,7 @@ export const getCryptoData = createAsyncThunk('data/getCryptoData', async () => 
     {
       id: each.id,
       name: each.name,
+      symbol: each.symbol,
       image: each.image,
       time: each.last_updated,
       market: each.market_data,
