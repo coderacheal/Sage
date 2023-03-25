@@ -1,0 +1,19 @@
+@import 'tile.css';
+@import 'cryptoDetails.css';
+@import 'options.css';
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+}

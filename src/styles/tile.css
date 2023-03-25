@@ -1,0 +1,46 @@
+.NavBar {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.brand {
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.allCryto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  margin: auto;
+  column-gap: 15px;
+  row-gap: 15px;
+
+  /* background-color: blue; */
+}
+
+.individualCryptoTile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 5%;
+  cursor: pointer;
+  transition: 1s;
+  font-weight: bold;
+  border: 1px solid rgb(255, 0, 102);
+}
+
+.individualCryptoTile:hover {
+  background-color: rgb(255, 0, 102);
+}
+
+.fa-arrow-right {
+  color: white;
+  border: 2px solid white;
+  padding: 3px;
+  border-radius: 50%;
+  position: relative;
+  left: 15%;
+}
