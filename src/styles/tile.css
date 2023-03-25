@@ -13,18 +13,19 @@
 .allCryto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
+  width: 70%;
   margin: auto;
   column-gap: 15px;
   row-gap: 15px;
+
+  /* background-color: blue; */
 }
 
 .individualCryptoTile {
-  padding: 50px 50px;
-
-  /* height: 50px; */
-
-  /* width: 20%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 5%;
   cursor: pointer;
   transition: 1s;
   font-weight: bold;
@@ -42,6 +43,4 @@
   border-radius: 50%;
   position: relative;
   left: 15%;
-
-  /* padding: 30%; */
 }
