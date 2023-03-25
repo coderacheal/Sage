@@ -52,21 +52,6 @@ const currencySlice = createSlice({
   },
 });
 
-// reducers: {
-//   getdetails: (state, action) => {
-//     const id = action.payload;
-//     const coindata = state;
-//     coindata.crypto = state.crypto.map((coin) => {
-//       const coins = coin;
-//       if (coin.id === id) {
-//         coins.show = true;
-//       } else {
-//         coins.show = false;
-//       }
-//       return coin;
-//     });
-//   },
-// },
-
 export const { getCurrencyDetails } = currencySlice.actions;
+export const { getdetails } = currencySlice.actions;
 export default currencySlice.reducer;

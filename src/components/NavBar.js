@@ -1,16 +1,13 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-  const { crypto } = useSelector((store) => store.crypto);
-
-  return (
+const Navbar = () => (
+  <div>
     <div>
-      <div>
-        <h1 className="brand">SMART CRYPTO</h1>
-      </div>
+      <Link to="/"><i className="fa-solid fa-arrow-right" /></Link>
+      <h1 className="brand">SMART CRYPTO</h1>
     </div>
-  );
-};
+  </div>
+);
 
 export default Navbar;

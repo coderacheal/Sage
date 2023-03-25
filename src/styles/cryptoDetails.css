@@ -4,20 +4,9 @@
   padding: 20px;
 }
 
-/* .date-selection {
-  width: 50%;
-  height: 25px;
-  padding: 10px;
-  background-color: rgb(255, 0, 102);
-  color: white;
-  outline: none;
-  font-weight: bold;
-  margin-bottom: 30px;
-  align-items: center;
-} */
-
 .oneCurrency {
   background-color: rgb(255, 0, 102);
+  /* background-color:blue; */
   width: 80%;
   margin: auto;
   padding-bottom: 3%;
@@ -30,15 +19,8 @@
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
-  /* text-align: left; */
   display: flex;
   justify-content: space-between;
-}
-
-.AllDetails {
-  /* display: grid;
-  grid-template-columns: 2fr 1fr;
-  row-gap: 20px; */
 }
 
 .span {

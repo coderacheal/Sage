@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import store from './redux/store';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const BASEURL = 'https://api.coingecko.com/api/v3/coins/';

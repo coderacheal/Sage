@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link, useParams, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { getCryptoData } from '../redux/currencySlice';
 import Navbar from './NavBar';
 
 const Tiles = () => {
   const dispatch = useDispatch();
   const [search, setSearch] = useState('');
-  const { name } = useParams();
   const { crypto } = useSelector((store) => store.crypto);
 
   useEffect(() => {
@@ -31,9 +30,9 @@ const Tiles = () => {
           <div key={eachCoin.id} className="individualCryptoTile">
             <img src={eachCoin.image.small} alt={eachCoin.name} />
             {eachCoin.name}
-            <NavLink to={`/crypto/${name}`}>
+            <Link to={`/crypto/${eachCoin.id}`}>
               <i className="fa-solid fa-arrow-right" />
-            </NavLink>
+            </Link>
           </div>
         ))}
       </div>
