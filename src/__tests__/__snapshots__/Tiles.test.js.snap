@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryDetails should render the component 1`] = `
+<div
+  data-test-id="tiles"
+>
+  <h1>
+    SMART CRYPTO
+  </h1>
+  <input
+    className="search"
+    onChange={[Function]}
+    placeholder="Search for a currency..."
+    type="text"
+    value=""
+  />
+  <div
+    className="allCryto"
+  />
+</div>
+`;
