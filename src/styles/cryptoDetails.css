@@ -6,6 +6,7 @@
 
 .oneCurrency {
   background-color: rgb(255, 0, 102);
+
   /* background-color:blue; */
   width: 70%;
   margin: auto;
@@ -15,23 +16,11 @@
 .moreDetails {
   background-color: black;
   padding: 0 30px;
-  
   width: 70%;
   margin: auto;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-}
-
-.image {
-  background-color: black;
-  padding: 3px;
-  border-radius: 50%;
-}
-
-.span {
-  vertical-align: center;
-  text-align: center;
 }
 
 .CoinStats {
