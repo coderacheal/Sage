@@ -21,6 +21,10 @@ export const getCryptoData = createAsyncThunk('data/getCryptoData', async () => 
       id: each.id,
       name: each.name,
       image: each.image,
+      time: each.last_updated,
+      market: each.market_data,
+      ranking: each.market_data.market_cap_rank,
+      show: false,
     }
   ));
 });
@@ -28,16 +32,41 @@ export const getCryptoData = createAsyncThunk('data/getCryptoData', async () => 
 const currencySlice = createSlice({
   name: 'crypto',
   initialState,
-  reducers: {},
+  reducers: {
+    getCurrencyDetails: (state, action) => {
+      const id = action.payload;
+      state.crypto.map((coin) => {
+        if (coin.id === id) {
+          return coin;
+        } return 'No such Coin!';
+      });
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getCryptoData.fulfilled, (state, action) => ({
         ...state,
         crypto: action.payload,
       }
-      // .addCase()
       ));
   },
 });
 
+// reducers: {
+//   getdetails: (state, action) => {
+//     const id = action.payload;
+//     const coindata = state;
+//     coindata.crypto = state.crypto.map((coin) => {
+//       const coins = coin;
+//       if (coin.id === id) {
+//         coins.show = true;
+//       } else {
+//         coins.show = false;
+//       }
+//       return coin;
+//     });
+//   },
+// },
+
+export const { getCurrencyDetails } = currencySlice.actions;
 export default currencySlice.reducer;

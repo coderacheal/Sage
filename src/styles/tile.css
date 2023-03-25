@@ -21,10 +21,6 @@
 
 .individualCryptoTile {
   padding: 50px 50px;
-
-  /* height: 50px; */
-
-  /* width: 20%; */
   cursor: pointer;
   transition: 1s;
   font-weight: bold;
@@ -42,6 +38,4 @@
   border-radius: 50%;
   position: relative;
   left: 15%;
-
-  /* padding: 30%; */
 }

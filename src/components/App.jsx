@@ -1,6 +1,6 @@
 import '../styles/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Tile from './Tile';
+import Tiles from './Tiles';
 import CryptoDetails from './cryptoDetails';
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          {/* <Route path="" element={<Tile />} /> */}
-          <Route path="/" element={<CryptoDetails />} />
+          <Route path="/" element={<Tiles />} />
+          <Route path="/crypto/:name" element={<CryptoDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
