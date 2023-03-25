@@ -59,7 +59,8 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-[Live Demo](https://smart-crypto-gx55.onrender.com/)
+[Live Demo](https://smart-crypto-56es.onrender.com/)
+[Loom Presentation](https://www.loom.com/share/9ddd572f03cf43d28527c1330375ea26)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
