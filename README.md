@@ -7,7 +7,7 @@
 <div align="center">
   <br/>
 
-  <h3><b>SMART CRYPTO</b></h3>
+  <h2><b>SMART CRYPTO</b></h2>
 
 </div>
 
@@ -20,6 +20,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+  - [Live Presentation ](#live-presentation-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -63,6 +64,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 [Live Demo](https://smart-crypto-56es.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+##  Live Presentation <a name="live-presentation"></a>
 [Loom Presentation](https://www.loom.com/share/9ddd572f03cf43d28527c1330375ea26)
 
 
@@ -153,14 +159,14 @@ If you like this project please give it a start and share it with your friends.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to appreciate[Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer.
+I would like to acknowledge the original design idea by [Nelson Sakwa](https://www.microverse.org/) on Behance
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
