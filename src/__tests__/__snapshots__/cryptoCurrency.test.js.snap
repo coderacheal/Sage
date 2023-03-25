@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Crypto Details render each crypto romponent 1`] = `
+<div>
+  <nav
+    className="Nav"
+  >
+    <div>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="fa-solid fa-arrow-left"
+        />
+      </a>
+    </div>
+    <div>
+      <h1
+        className="brand"
+      >
+        SMART CRYPTO
+      </h1>
+    </div>
+  </nav>
+</div>
+`;

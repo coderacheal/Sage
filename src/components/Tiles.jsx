@@ -21,7 +21,7 @@ const Tiles = () => {
   ));
 
   return (
-    <div>
+    <div data-test-id="tiles">
       <h1>SMART CRYPTO</h1>
       <input type="text" className="search" value={search} placeholder="Search for a currency..." onChange={handleSearch} />
       <div className="allCryto">
