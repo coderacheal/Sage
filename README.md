@@ -20,7 +20,6 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-  - [Live Presentation ](#live-presentation-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -66,10 +65,6 @@
 [Live Demo](https://smart-crypto-56es.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-##  Live Presentation <a name="live-presentation"></a>
-[Loom Presentation](https://www.loom.com/share/9ddd572f03cf43d28527c1330375ea26)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
