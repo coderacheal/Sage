@@ -35,7 +35,7 @@
   - [📝 License ](#-license-)
 
 # 📖 [Smart Cyrpto ] <a name="about-project"></a>
-**[Bookstore ]** is  a website that display real-time data of the prices of crypto on the market
+**[Smart Crypto ]** is  a website that display real-time data of the prices of crypto on the market
 
 ## 🛠 Built With <a name="built-with"></a>
 
