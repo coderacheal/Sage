@@ -17,19 +17,19 @@
   margin: auto;
   column-gap: 15px;
   row-gap: 15px;
-
-  /* background-color: blue; */
 }
 
 .individualCryptoTile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 5%;
+  padding: 10% 5%;
   cursor: pointer;
   transition: 1s;
   font-weight: bold;
   border: 1px solid rgb(255, 0, 102);
+  color: white;
+  text-decoration: none;
 }
 
 .individualCryptoTile:hover {
@@ -43,4 +43,18 @@
   border-radius: 50%;
   position: relative;
   left: 15%;
+}
+
+@media (max-width: 420px) {
+  .individualCryptoTile {
+    padding: 25% 5%;
+  }
+
+  .p {
+    font-size: 12px;
+  }
+
+  .allCryto {
+    width: 90%;
+  }
 }

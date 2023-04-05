@@ -26,13 +26,13 @@ const Tiles = () => {
       <input type="text" className="search" value={search} placeholder="Search for a currency..." onChange={handleSearch} />
       <div className="allCryto">
         {filtering.map((eachCoin) => (
-          <div key={eachCoin.id} className="individualCryptoTile">
-            <img src={eachCoin.image.small} alt={eachCoin.name} />
-            <p>{eachCoin.name}</p>
-            <Link to={`/crypto/${eachCoin.id}`}>
-              <i className="fa-solid fa-arrow-right" />
-            </Link>
-          </div>
+          <Link to={`/crypto/${eachCoin.id}`} key={eachCoin.id}>
+            <div key={eachCoin.id} className="individualCryptoTile">
+              <img src={eachCoin.image.small} alt={eachCoin.name} />
+              <p className="p">{eachCoin.name}</p>
+              {/* <i className="fa-solid fa-arrow-right" /> */}
+            </div>
+          </Link>
         ))}
       </div>
     </div>
