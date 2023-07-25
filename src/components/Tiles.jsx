@@ -22,7 +22,6 @@ const Tiles = () => {
 
   return (
     <div data-test-id="tiles">
-      <h1>SMART CRYPTO</h1>
       <input type="text" className="search" value={search} placeholder="Search for a currency..." onChange={handleSearch} />
       <div className="allCryto">
         {filtering.map((eachCoin) => (
@@ -30,7 +29,6 @@ const Tiles = () => {
             <div key={eachCoin.id} className="individualCryptoTile">
               <img src={eachCoin.image.small} alt={eachCoin.name} />
               <p className="p">{eachCoin.name}</p>
-              {/* <i className="fa-solid fa-arrow-right" /> */}
             </div>
           </Link>
         ))}

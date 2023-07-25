@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="Nav">
-    <NavLink to="/">Back</NavLink>
-    <div>
-      <h1 className="brand">SAGE</h1>
-    </div>
+    <ul>
+      <li><NavLink to="/">Back</NavLink></li>
+      <li><h1 className="brand">SAGE</h1></li>
+    </ul>
   </nav>
 );
 
