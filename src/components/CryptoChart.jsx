@@ -41,7 +41,7 @@ const CryptoChart = () => {
       ' Last30 days', 'Last 60 days', 'Last 200 days', 'Last 1 year'],
     datasets: [
       {
-        label: 'Price changes in percentage ($USD)',
+        label: `Price changes in percentage ($USD) for ${clickedCoin[0].name}`,
         data: [
           marketData?.price_change_percentage_1h_in_currency?.usd,
           marketData?.price_change_percentage_24h_in_currency?.usd,

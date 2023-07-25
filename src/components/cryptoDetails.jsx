@@ -13,7 +13,7 @@ const CryptoDetails = () => {
     dispatch(getCurrencyDetails(CryptoId));
   }, [dispatch, CryptoId, crypto]);
 
-  const clickedCoin = crypto.filter((coin) => coin.id === 'bitcoin');
+  const clickedCoin = crypto.filter((coin) => coin.id === CryptoId);
 
   return (
     <div>

@@ -29,6 +29,7 @@ const Tiles = () => {
             <div key={eachCoin.id} className="individualCryptoTile">
               <img src={eachCoin.image.small} alt={eachCoin.name} />
               <p className="p">{eachCoin.name}</p>
+              {/* <Link to={`/crypto/visualise/${eachCoin.id}`}>Charts</Link> */}
             </div>
           </Link>
         ))}
