@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="Nav">
-    <div><NavLink to="/"><i className="fa-solid fa-arrow-left" /></NavLink></div>
+    <NavLink to="/">Back</NavLink>
     <div>
-      <h1 className="brand">SMART CRYPTO</h1>
+      <h1 className="brand">SAGE</h1>
     </div>
   </nav>
 );

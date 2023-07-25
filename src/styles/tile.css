@@ -45,7 +45,7 @@
   left: 15%;
 }
 
-@media (max-width: 420px) {
+@media (min-width: 320px) and (max-width: 426px) {
   .individualCryptoTile {
     padding: 25% 5%;
   }
@@ -55,6 +55,8 @@
   }
 
   .allCryto {
-    width: 90%;
+    width: 75%;
+    grid-template-columns: 1fr ;
+    margin-bottom: 200px;
   }
 }
