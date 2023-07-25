@@ -1,13 +1,12 @@
 import React from 'react';
 import Navbar from './NavBar';
 import Tiles from './Tiles';
-import CryptoChart from './CryptoChart';
+// import CryptoChart from './CryptoChart';
 
 const HomePage = () => (
   <div>
-    {/* <Navbar /> */}
-    {/* <Tiles /> */}
-    <CryptoChart />
+    <Navbar />
+    <Tiles />
   </div>
 );
 

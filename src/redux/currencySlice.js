@@ -43,6 +43,9 @@ const currencySlice = createSlice({
         } return 'No such Coin!';
       });
     },
+    getCurrencyStats: {
+
+    },
   },
   extraReducers: (builder) => {
     builder

@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
 import { getCurrencyDetails } from '../redux/currencySlice';
-// import Navbar from './NavBar';
-// import CryptoChart from './CryptoChart';
 import Navbar from './NavBar';
 
 const CryptoDetails = () => {
@@ -15,7 +13,7 @@ const CryptoDetails = () => {
     dispatch(getCurrencyDetails(CryptoId));
   }, [dispatch, CryptoId, crypto]);
 
-  const clickedCoin = crypto.filter((coin) => coin.id === CryptoId);
+  const clickedCoin = crypto.filter((coin) => coin.id === 'bitcoin');
 
   return (
     <div>
@@ -23,7 +21,7 @@ const CryptoDetails = () => {
       {clickedCoin.map((coin) => (
 
         <div className="oneCurrency" key={coin.id}>
-
+          <Link to={`/crypto/visualise/${coin.id}`}>Chart</Link>
           <div className="CoinStats">
             <img key={coin.id} src={coin.image.small} alt="coin" className="image" />
             <p key={coin.id}>
@@ -35,7 +33,7 @@ const CryptoDetails = () => {
               {coin.symbol}
             </p>
           </div>
-          <Link to={`/crypto/${coin.id}/visualise`}>Chart</Link>
+
           <div className="AllDetails">
             <div className="moreDetails">
               <p>Current Price(USD):</p>

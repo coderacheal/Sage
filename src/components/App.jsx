@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/crypto/:CryptoId/" element={<CryptoDetails />} />
-          <Route path="/crypto/:CryptoId/visualise" element={<CryptoChart />} />
+          <Route path="/crypto/visualise/:CryptoId" element={<CryptoChart />} />
         </Routes>
       </BrowserRouter>
     </div>
