@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
 import { getCurrencyDetails } from '../redux/currencySlice';
 import Navbar from './NavBar';
+import Footer from './Footer';
 
 const CryptoDetails = () => {
   const { CryptoId } = useParams();
@@ -19,9 +20,9 @@ const CryptoDetails = () => {
     <div>
       <Navbar />
       {clickedCoin.map((coin) => (
-
         <div className="oneCurrency" key={coin.id}>
           <Link to={`/crypto/visualise/${coin.id}`}>Chart</Link>
+          <Link to="/">Home</Link>
           <div className="CoinStats">
             <img key={coin.id} src={coin.image.small} alt="coin" className="image" />
             <p key={coin.id}>
@@ -67,6 +68,7 @@ const CryptoDetails = () => {
           </div>
         </div>
       ))}
+      <Footer />
     </div>
   );
 };
