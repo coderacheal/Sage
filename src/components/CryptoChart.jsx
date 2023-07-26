@@ -33,7 +33,8 @@ const CryptoChart = () => {
   const clickedCoin = crypto.filter((coin) => coin.id === CryptoId);
   console.log(clickedCoin);
 
-  const marketData = clickedCoin[0]?.market; // Using optional chaining to handle the case when the array is empty or not available
+  // handle the case when the array is empty or not available
+  const marketData = clickedCoin[0]?.market;
   console.log(marketData);
 
   const data = {

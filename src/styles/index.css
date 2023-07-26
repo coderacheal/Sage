@@ -1,6 +1,8 @@
 @import 'tile.css';
 @import 'cryptoDetails.css';
 @import 'options.css';
+@import 'footer.css';
+@import 'App.css';
 
 body {
   margin: 0;

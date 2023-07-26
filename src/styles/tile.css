@@ -1,39 +1,31 @@
-.NavBar {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.brand {
-  color: white;
-  font-weight: bold;
-  padding: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 .allCryto {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 70%;
+  grid-template-columns: 30% 30% 30%;
+  width: 60vw;
+  height: 68vh;
   margin: auto;
-  column-gap: 15px;
-  row-gap: 15px;
+  column-gap: 3%;
+  row-gap: 10px;
+  overflow: auto;
 }
 
 .individualCryptoTile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10% 5%;
+  padding: 10%;
   cursor: pointer;
   transition: 1s;
   font-weight: bold;
-  border: 1px solid rgb(255, 0, 102);
+  border: 1px solid aqua;
   color: white;
   text-decoration: none;
 }
 
 .individualCryptoTile:hover {
-  background-color: rgb(255, 0, 102);
+  background-color: aqua;
 }
 
 .fa-arrow-right {
@@ -43,6 +35,31 @@
   border-radius: 50%;
   position: relative;
   left: 15%;
+}
+
+.coin-link {
+  text-decoration: none;
+}
+
+.coinName {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.allCryto::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Mouse Handle */
+.allCryto::-webkit-scrollbar-thumb {
+  background: linear-gradient(#c6e6ca, #ffb6c1); /* Mint Green to Pink Rose */
+  border-radius: 5px;
+}
+
+/* Mouse Handle on hover */
+.allCryto::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#ffb6c1, #c6e6ca); /* Pink Rose to Mint Green */
 }
 
 @media (min-width: 320px) and (max-width: 426px) {
@@ -56,7 +73,7 @@
 
   .allCryto {
     width: 75%;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     margin-bottom: 200px;
   }
 }

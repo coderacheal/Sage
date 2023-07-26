@@ -16,20 +16,28 @@ const Tiles = () => {
     setSearch(e.target.value);
   };
 
+  const handlePageRefresh = () => {
+    // Dispatch the action to fetch the data again
+    dispatch(getCryptoData());
+    window.location.reload();
+  };
+
   const filtering = crypto.filter((coin) => (
     coin.name.toLowerCase().includes(search.toLowerCase())
   ));
 
   return (
     <div data-test-id="tiles">
-      <input type="text" className="search" value={search} placeholder="Search for a currency..." onChange={handleSearch} />
+      <div className="searchContainer">
+        <button type="button" className="refresh" onClick={handlePageRefresh}>Refresh</button>
+        <input type="text" className="search" value={search} placeholder="Search for a currency..." onChange={handleSearch} />
+      </div>
       <div className="allCryto">
         {filtering.map((eachCoin) => (
-          <Link to={`/crypto/${eachCoin.id}`} key={eachCoin.id}>
+          <Link to={`/crypto/${eachCoin.id}`} key={eachCoin.id} className="coin-link">
             <div key={eachCoin.id} className="individualCryptoTile">
               <img src={eachCoin.image.small} alt={eachCoin.name} />
-              <p className="p">{eachCoin.name}</p>
-              {/* <Link to={`/crypto/visualise/${eachCoin.id}`}>Charts</Link> */}
+              <p className="coinName">{eachCoin.name}</p>
             </div>
           </Link>
         ))}
