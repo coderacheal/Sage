@@ -1,18 +1,27 @@
+.detailsContainer {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.oneCurrency {
+  background-color: rgb(71, 199, 199);
+  width: 70%;
+  height: 65vh;
+  margin: 20px auto;
+  padding-bottom: 3%;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  align-self: center;
+}
+
 .dailyData {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-}
-
-.oneCurrency {
-  background-color: rgb(122, 1, 100);
-  background-color: rgb(31, 221, 221);
-  background-color: rgb(71, 199, 199);
-  width: 70%;
-  margin: auto;
-  padding-bottom: 3%;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .moreDetails {
@@ -23,12 +32,62 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(255, 3, 3, 0.2);
+  border-radius: 15px;
+  color: white;
 }
 
 .CoinStats {
   display: flex;
-  width: 70%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
   margin: auto;
   padding: 20px 0;
+  color: black;
+  font-weight: bold;
+}
+
+.chart-home-links {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  width: 30%;
+  float: right;
+  color: green;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .oneCurrency {
+    width: 90%;
+    font-size: 12px;
+    height: 75vh;
+  }
+
+  .moreDetails {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .chart-home-links {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .oneCurrency {
+    width: 85%;
+    font-size: 14px;
+    height: 70vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+  .oneCurrency {
+    width: 85%;
+    font-size: 16px;
+    height: 68vh;
+
+    /* margin */
+  }
 }

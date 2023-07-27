@@ -3,7 +3,7 @@
 .allCryto {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  width: 60vw;
+  width: 80vw;
   height: 68vh;
   margin: auto;
   column-gap: 3%;
@@ -26,15 +26,6 @@
 
 .individualCryptoTile:hover {
   background-color: aqua;
-}
-
-.fa-arrow-right {
-  color: white;
-  border: 2px solid white;
-  padding: 3px;
-  border-radius: 50%;
-  position: relative;
-  left: 15%;
 }
 
 .coin-link {
@@ -62,9 +53,15 @@
   background: linear-gradient(#ffb6c1, #c6e6ca); /* Pink Rose to Mint Green */
 }
 
-@media (min-width: 320px) and (max-width: 426px) {
+@media (min-width: 320px) and (max-width: 500px) {
+  .tiles {
+    background-color: red;
+    width: 95%;
+    margin: auto;
+  }
+
   .individualCryptoTile {
-    padding: 25% 5%;
+    padding: 10% 5%;
   }
 
   .p {
@@ -72,8 +69,43 @@
   }
 
   .allCryto {
-    width: 75%;
+    width: 85%;
+    margin: auto;
     grid-template-columns: 1fr;
-    margin-bottom: 200px;
+    margin-bottom: 0;
+    height: 85vh;
+
+    /* align-items: center; */
+  }
+
+  .searchContainer {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .refresh {
+    padding: 2px;
+    height: 30px;
+    width: 70px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .allCryto {
+    width: 85%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    height: 85vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .allCryto {
+    width: 85%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+    height: 85vh;
   }
 }

@@ -7,4 +7,10 @@
   width: 60%;
   margin: auto;
   text-align: right;
+  transition: 0.5s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.back-btn:hover {
+  color: rgb(126, 232, 196);
 }

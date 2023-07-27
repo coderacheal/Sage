@@ -24,11 +24,14 @@ ChartJS.register(
 const CryptoChart = () => {
   const { CryptoId } = useParams();
   const dispatch = useDispatch();
+  // const { crypto } = useSelector((store) => store.crypto);
   const { crypto } = useSelector((store) => store.crypto);
 
   useEffect(() => {
     dispatch(getCurrencyDetails(CryptoId));
-  }, [dispatch, CryptoId, crypto]);
+  }, [dispatch, CryptoId]);
+
+  // Handle loading and error states
 
   const clickedCoin = crypto.filter((coin) => coin.id === CryptoId);
 
@@ -55,6 +58,19 @@ const CryptoChart = () => {
     ],
   };
 
+  const options = {
+    plugins: {
+      legend: {
+        labels: {
+          // This more specific font property overrides the global property
+          font: {
+            size: 24,
+          },
+        },
+      },
+    },
+  };
+
   return (
     <div>
       <Navbar />
@@ -62,6 +78,7 @@ const CryptoChart = () => {
       <div style={{ width: '70%', margin: '30px auto' }}>
         <Bar
           data={userData}
+          options={options}
         />
       </div>
 
