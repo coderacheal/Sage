@@ -14,3 +14,15 @@
 .back-btn:hover {
   color: rgb(126, 232, 196);
 }
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .barElement {
+    height: 90%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .barElement {
+    width: 80%;
+  }
+}

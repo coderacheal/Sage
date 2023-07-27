@@ -1,5 +1,5 @@
 import { Bar } from 'react-chartjs-2';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
 import {
@@ -24,17 +24,35 @@ ChartJS.register(
 const CryptoChart = () => {
   const { CryptoId } = useParams();
   const dispatch = useDispatch();
-  // const { crypto } = useSelector((store) => store.crypto);
   const { crypto } = useSelector((store) => store.crypto);
+  const [aspectRatio, setAspectRatio] = useState(2);
 
   useEffect(() => {
     dispatch(getCurrencyDetails(CryptoId));
+
+    const updateAspectRatio = () => {
+      const screenWidth = window.innerWidth;
+      // Set the desired aspect ratio based on the screen width
+      if (screenWidth <= 768) {
+        setAspectRatio(2);
+      } else {
+        setAspectRatio(2);
+      }
+    };
+
+    // Call the function to set the initial aspect ratio
+    updateAspectRatio();
+
+    // Event listener to update aspect ratio on window resize
+    window.addEventListener('resize', updateAspectRatio);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', updateAspectRatio);
+    };
   }, [dispatch, CryptoId]);
 
-  // Handle loading and error states
-
   const clickedCoin = crypto.filter((coin) => coin.id === CryptoId);
-
   // handle the case when the array is empty or not available
   const marketData = clickedCoin[0]?.market;
 
@@ -59,12 +77,13 @@ const CryptoChart = () => {
   };
 
   const options = {
+    aspectRatio,
     plugins: {
       legend: {
         labels: {
           // This more specific font property overrides the global property
           font: {
-            size: 24,
+            size: 18,
           },
         },
       },
@@ -75,7 +94,7 @@ const CryptoChart = () => {
     <div>
       <Navbar />
       <Link to="/" className="back-btn">Back</Link>
-      <div style={{ width: '70%', margin: '30px auto' }}>
+      <div style={{ width: '70vw', margin: '30px auto' }} className="barElement">
         <Bar
           data={userData}
           options={options}
