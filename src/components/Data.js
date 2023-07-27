@@ -20,11 +20,29 @@ export const UserData = [
   {
     id: 4,
     year: 2019,
-    userGain: 90000,
+    userGain: 10000,
     userLost: 4555,
   },
   {
     id: 5,
+    year: 2020,
+    userGain: 4300,
+    userLost: 234,
+  },
+  {
+    id: 6,
+    year: 2020,
+    userGain: 4300,
+    userLost: 234,
+  },
+  {
+    id: 7,
+    year: 2020,
+    userGain: 4300,
+    userLost: 234,
+  },
+  {
+    id: 8,
     year: 2020,
     userGain: 4300,
     userLost: 234,
