@@ -1,13 +1,10 @@
-![image](https://user-images.githubusercontent.com/97846040/227732241-00403464-c964-493a-9f53-f7a2f34441f5.png)
-
-
 <a name="readme-top"></a>
 
 
 <div align="center">
   <br/>
 
-  <h2><b>SMART CRYPTO</b></h2>
+ ![image](https://github.com/coderacheal/Sage/assets/97846040/3c9cd0e8-8767-4fbc-8eb0-f7db3a7a0818)
 
 </div>
 
@@ -57,8 +54,18 @@
 
 
 - **[Display a list of Crypto Currencies]**
+
+  ![image](https://github.com/coderacheal/Sage/assets/97846040/79234a19-c45f-42c8-b1f0-3162c2e21503)
+
 - **[Displays a detail stat on the current price, time of last update, price change etc  ]**
 
+  ![image](https://github.com/coderacheal/Sage/assets/97846040/42e9e31a-d80b-4ab9-866d-45479adc7045)
+
+- **[Displays a clean visualization of the coins trend for the past year at very intervals ]**
+
+  ![image](https://github.com/coderacheal/Sage/assets/97846040/c7f75ea2-1f4f-4f3e-8714-8421b5055b73)
+
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
