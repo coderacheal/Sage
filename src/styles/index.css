@@ -3,6 +3,7 @@
 @import 'options.css';
 @import 'footer.css';
 @import 'App.css';
+@import 'chart.css';
 
 body {
   margin: 0;

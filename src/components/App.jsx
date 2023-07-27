@@ -1,8 +1,9 @@
 import '../styles/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
 import CryptoDetails from './cryptoDetails';
 import HomePage from './HomePage';
-import CryptoChart from './CryptoChart';
+import Charts from './Charts';
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/crypto/:CryptoId/" element={<CryptoDetails />} />
-          <Route path="/crypto/visualise/:CryptoId" element={<CryptoChart />} />
+          <Route path="/crypto/visualise/:CryptoId" element={<Charts />} />
         </Routes>
       </BrowserRouter>
+
     </div>
   );
 }
