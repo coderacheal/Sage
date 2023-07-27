@@ -75,7 +75,8 @@ Welcome to **Sage**, a real-time platform providing the latest data on cryptocur
 
 - **Displays a clean visualization of the coins trend for the past year at very intervals**
 
-  ![image](https://github.com/coderacheal/Sage/assets/97846040/c7f75ea2-1f4f-4f3e-8714-8421b5055b73)
+  ![image](https://github.com/coderacheal/Sage/assets/97846040/c30a3112-10bf-466e-b2dc-9ca156e1e74a)
+
 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
