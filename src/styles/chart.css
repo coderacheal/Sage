@@ -1,4 +1,10 @@
-.container-main-chart {
-  background-color: red;
-  height: 100vh;
+.back-btn {
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  text-decoration: none;
+  display: block;
+  width: 60%;
+  margin: auto;
+  text-align: right;
 }

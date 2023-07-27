@@ -39,7 +39,7 @@ const CryptoChart = () => {
     labels: ['Last hour', 'Last 24hrs', 'Last 7 days', 'Last 14 days', 'Last30 days', 'Last 60 days', 'Last 200 days', 'Last 1 year'],
     datasets: [
       {
-        label: 'Percentage change of price',
+        label: `Percentage change of price in USD ($) for ${clickedCoin[0].name} `,
         data: [
           marketData?.price_change_percentage_1h_in_currency?.usd,
           marketData?.price_change_percentage_24h_in_currency?.usd,
@@ -58,7 +58,7 @@ const CryptoChart = () => {
   return (
     <div>
       <Navbar />
-      <Link to="/">Back</Link>
+      <Link to="/" className="back-btn">Back</Link>
       <div style={{ width: '70%', margin: '30px auto' }}>
         <Bar
           data={userData}
