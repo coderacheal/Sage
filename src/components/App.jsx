@@ -1,6 +1,6 @@
 import '../styles/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
 import CryptoDetails from './cryptoDetails';
 import HomePage from './HomePage';
 import Charts from './Charts';

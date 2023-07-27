@@ -1,29 +1,4 @@
 .container-main-chart {
-    background-color: red;
-    height: 100vh;
-}
-
-/* CSS */
-.custom-chart-canvas {
-    /* Apply your desired styles here */
-    border: 1px solid #ddd; /* Example border style */
-    border-radius: 8px; /* Example border radius */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Example box shadow */
-  }
-  
-
-.navigation-container {
-    background-color: red;
-}
-
-.navigation {
-    color: white;
-}
-
-.barElement {
-    background-color: red;
-    width: 80%;
-    padding: 50px;
-    width: 500px; /* You can use any appropriate width (in pixels or percentage) */
-    height: 400px;
+  background-color: red;
+  height: 100vh;
 }
