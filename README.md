@@ -12,7 +12,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Smart Cyrpto \] ](#-smart-cyrpto--)
+- [📖 \[Sage\] ](#-sage-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -31,20 +31,32 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 [Smart Cyrpto ] <a name="about-project"></a>
-**[Smart Crypto ]** is  a website that display real-time data of the prices of crypto on the market
+# 📖 [Sage] <a name="about-project"></a>
+Welcome to **Sage**, a real-time platform providing the latest data on cryptocurrency prices and market metrics. With Sage, you can stay up-to-date with the ever-changing crypto landscape and visualize the trends for each coin effortlessly.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
+
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">REACT JS </a></li>
+    <li><a href="https://react.dev">ReactJS</a></li>
+  </ul>
+</details>
 
-    <li><a href="#">JSX</a></li>
-     <li><a href="#">Js</a></li>
+<details>
+  <summary>API</summary>
+  <ul>
+    <li><a href="https://api.coingecko.com">coingeko</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Visualization</summary>
+  <ul>
+    <li><a href="https://www.chartjs.org/docs/latest/">ChartJS</a></li>
   </ul>
 </details>
 
@@ -53,15 +65,15 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **[Display a list of Crypto Currencies]**
+- **Display a list of Crypto Currencies**
 
   ![image](https://github.com/coderacheal/Sage/assets/97846040/79234a19-c45f-42c8-b1f0-3162c2e21503)
 
-- **[Displays a detail stat on the current price, time of last update, price change etc  ]**
+- **Displays a detail stat on the current price, time of last update, price change etc**
 
   ![image](https://github.com/coderacheal/Sage/assets/97846040/42e9e31a-d80b-4ab9-866d-45479adc7045)
 
-- **[Displays a clean visualization of the coins trend for the past year at very intervals ]**
+- **Displays a clean visualization of the coins trend for the past year at very intervals**
 
   ![image](https://github.com/coderacheal/Sage/assets/97846040/c7f75ea2-1f4f-4f3e-8714-8421b5055b73)
 
@@ -88,25 +100,37 @@ To get a local copy up and running, follow these steps.
 ### Setup
 
 Clone this repository to your desired folder:
-https://github.com/coderacheal/crypto-app.git
+
+https://github.com/coderacheal/sage.git
  Example commands:
 
 ```sh
+
   cd my-folder
-  https://github.com/coderacheal/crypto-app.git
+
+  git clone https://github.com/coderacheal/sage.git
+
+  cd sage
+  
 ```
+
 
 ### Install
 
 Install this project with:
 
-` cd my-project
-  - Run npm install after cloning the repo
+ - Run npm install after cloning the repo to install project dependencies
+  
 
+```sh
+
+  npm install
+
+ ```
 ### Usage
 
-- Run npm start for development. 
-- Run npm run build for production
+- Run `npm start` for development. 
+- Run `npm run build` for production
 
 
 ### Run tests
@@ -137,8 +161,8 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Full navigation of the page ]**
-- [ ] **[Improve the UI/UX design  ]**
+- [ ] **Improve chart graphic for screens lesser that 768px**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +182,7 @@ If you like this project please give it a start and share it with your friends.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to acknowledge the original design idea by [Nelson Sakwa](https://www.microverse.org/) on Behance
+I would like to acknowledge the libraries created by people in the community that makes this possible
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
