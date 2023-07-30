@@ -1,12 +1,7 @@
 <a name="readme-top"></a>
 
 
-<div align="center">
-  <br/>
-
- ![image](https://github.com/coderacheal/Sage/assets/97846040/3c9cd0e8-8767-4fbc-8eb0-f7db3a7a0818)
-
-</div>
+![image](https://github.com/coderacheal/Sage/assets/97846040/fd5d9c27-978a-4fb7-a705-6d9136c21337)
 
 
 # 📗 Table of Contents
