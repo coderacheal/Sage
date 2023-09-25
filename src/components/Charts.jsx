@@ -57,7 +57,7 @@ const CryptoChart = () => {
   const marketData = clickedCoin[0]?.market;
 
   const userData = {
-    labels: ['Last hour', 'Last 24hrs', 'Last 7 days', 'Last 14 days', 'Last30 days', 'Last 60 days', 'Last 200 days', 'Last 1 year'],
+    labels: ['Last hour', 'Last 24hrs', 'Last 7 days', 'Last 14 days', 'Last 30 days', 'Last 60 days', 'Last 200 days', 'Last 1 year'],
     datasets: [
       {
         label: `Percentage change of price in USD ($) for ${clickedCoin[0].name} `,

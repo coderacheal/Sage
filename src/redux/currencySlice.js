@@ -16,6 +16,7 @@ export const getCryptoData = createAsyncThunk('data/getCryptoData', async () => 
     },
   });
   const crytoData = response.data;
+  console.log(crytoData)
   return crytoData.map((each) => (
     {
       id: each.id,
@@ -24,8 +25,6 @@ export const getCryptoData = createAsyncThunk('data/getCryptoData', async () => 
       image: each.image,
       time: each.last_updated,
       market: each.market_data,
-      // ranking: each.market_data.market_cap_rank,
-      // show: false,
     }
   ));
 });
