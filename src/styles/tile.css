@@ -87,11 +87,11 @@
   }
 
   .refresh {
-    display: block;
     background-color: red;
     padding: 2px;
     height: 30px;
     display: none;
+
     /* width: 70px; */
     margin-bottom: 15px;
     float: right;

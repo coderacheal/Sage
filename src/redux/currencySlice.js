@@ -16,7 +16,7 @@ export const getCryptoData = createAsyncThunk('data/getCryptoData', async () => 
     },
   });
   const crytoData = response.data;
-  console.log(crytoData)
+  console.log(crytoData);
   return crytoData.map((each) => (
     {
       id: each.id,
