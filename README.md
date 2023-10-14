@@ -4,7 +4,7 @@
 ![image](https://github.com/coderacheal/Sage/assets/97846040/fd5d9c27-978a-4fb7-a705-6d9136c21337)
 
 
-# 📗 Table of Contents
+# 📗 Table of Content
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 \[Sage\] ](#-sage-)
